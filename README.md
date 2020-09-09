@@ -2,13 +2,14 @@
 
 (i.e., letter phoenetic pronunciation of "UI")
 
-A framework-agnostic, forward-thinking, standards-compliant web UI component library.
+A multi-platform, multi-library, forward-thinking, design system.
 
 ## Install
 TBD...
 
 
 ## Supported Browsers
+(TODO: move to `packages/web-core/README.md`)
 
 Ooey is designed to work on evergreen browsers only (IE not supported).
 
