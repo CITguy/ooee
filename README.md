@@ -2,7 +2,7 @@
 
 (i.e., letter phoenetic pronunciation of "UI")
 
-A multi-platform, multi-library, forward-thinking, design system.
+A multi-platform, multi-library, forward-thinking, design system toolkit.
 
 ## Install
 TBD...
