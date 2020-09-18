@@ -12,7 +12,7 @@ TBD...
 
 
 ## Supported Browsers
-(TODO: move to `packages/web-core/README.md`)
+(TODO: move to `packages/ooee-web/README.md`)
 
 Ooee is designed to work on evergreen browsers only (IE not supported).
 
