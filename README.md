@@ -1,6 +1,9 @@
-# Ooey
+# Ooee
 
-(i.e., letter phoenetic pronunciation of "UI")
+> \ü-ē\
+>
+> 1. You'll love the Ooee GUI toolkit.
+
 
 A multi-platform, multi-library, forward-thinking, design system toolkit.
 
