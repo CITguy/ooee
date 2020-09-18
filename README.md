@@ -14,9 +14,9 @@ TBD...
 ## Supported Browsers
 (TODO: move to `packages/web-core/README.md`)
 
-Ooey is designed to work on evergreen browsers only (IE not supported).
+Ooee is designed to work on evergreen browsers only (IE not supported).
 
-This is because Ooey is built using the following technologies:
+This is because Ooee is built using the following technologies:
 
 * [ECMAScript Modules (ESM)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 * [ECMAScript 2015 / ES6](https://kangax.github.io/compat-table/es6/)
