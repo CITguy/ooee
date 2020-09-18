@@ -1,7 +1,7 @@
 {
-  "name": "ooey",
+  "name": "ooee",
   "version": "0.1.0",
-  "description": "Web Component UI Library (ooey gui goodness)",
+  "description": "Design System Toolkit",
   "main": "index.js",
   "module": "main.js",
   "scripts": {
