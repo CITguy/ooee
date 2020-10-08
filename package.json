@@ -1,15 +1,9 @@
 {
-  "name": "ooee",
-  "version": "0.1.0",
+  "name": "Ooee",
   "description": "Design System Toolkit",
-  "main": "index.js",
-  "module": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Ryan Johnson <rhino.citguy@gmail.com>",
+  "private": true,
   "license": "MIT",
-  "devDependencies": {
-    "esm": "^3.2.25"
-  }
+  "workspaces": [
+    "packages/*"
+  ]
 }
