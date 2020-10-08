@@ -21,11 +21,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "Ooee",
         "reference": "workspace:."
+      },
+      {
+        "name": "@ooee/core",
+        "reference": "workspace:packages/core"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
+      ["@ooee/core", ["workspace:packages/core"]],
       ["Ooee", ["workspace:."]]
     ],
     "fallbackPool": [
@@ -37,6 +42,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@ooee/core", [
+        ["workspace:packages/core", {
+          "packageLocation": "./packages/core/",
+          "packageDependencies": [
+            ["@ooee/core", "workspace:packages/core"]
           ],
           "linkType": "SOFT",
         }]
