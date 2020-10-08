@@ -7,8 +7,8 @@
 
 A multi-platform, multi-library, forward-thinking, design system toolkit.
 
-## Install
-TBD...
+## Packages
+* [`@ooee/core`](packages/core/README.md)
 
 
 ## Supported Browsers

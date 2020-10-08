@@ -1,0 +1,16 @@
+{
+  "name": "@ooee/core",
+  "version": "0.0.1-0",
+  "author": "Ryan Johnson",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CITguy/ooee.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CITguy/ooee/labels/pkg-core"
+  },
+  "homepage": "https://github.com/CITguy/ooee#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
