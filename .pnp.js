@@ -27,6 +27,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/core"
       },
       {
+        "name": "@ooee/core-color-fns",
+        "reference": "workspace:packages/core-color-fns"
+      },
+      {
         "name": "@ooee/web",
         "reference": "workspace:packages/web"
       }
@@ -35,6 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
       ["@ooee/core", ["workspace:packages/core"]],
+      ["@ooee/core-color-fns", ["workspace:packages/core-color-fns"]],
       ["@ooee/web", ["workspace:packages/web"]],
       ["Ooee", ["workspace:."]]
     ],
@@ -56,6 +61,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/core/",
           "packageDependencies": [
             ["@ooee/core", "workspace:packages/core"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@ooee/core-color-fns", [
+        ["workspace:packages/core-color-fns", {
+          "packageLocation": "./packages/core-color-fns/",
+          "packageDependencies": [
+            ["@ooee/core-color-fns", "workspace:packages/core-color-fns"]
           ],
           "linkType": "SOFT",
         }]

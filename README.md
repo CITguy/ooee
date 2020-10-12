@@ -9,4 +9,5 @@ A multi-platform, multi-library, forward-thinking, design system toolkit.
 
 ## Packages
 * [`@ooee/core`](packages/core/README.md)
+    * [`@ooee/core-color-fns`](packages/core-color-fns/README.md)
 * [`@ooee/web`](packages/web/README.md)
