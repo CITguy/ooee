@@ -4,6 +4,12 @@
 __metadata:
   version: 4
 
+"@ooee/core-color-fns@workspace:packages/core-color-fns":
+  version: 0.0.0-use.local
+  resolution: "@ooee/core-color-fns@workspace:packages/core-color-fns"
+  languageName: unknown
+  linkType: soft
+
 "@ooee/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@ooee/core@workspace:packages/core"
