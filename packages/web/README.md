@@ -1,4 +1,4 @@
-# Ooee/web
+# @ooee/web
 Common assets for building web-based Ooee UIs.
 
 ```
@@ -14,3 +14,4 @@ This is because Ooee is built using the following technologies:
 * [ECMAScript Modules (ESM)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 * [ECMAScript 2015 / ES6](https://kangax.github.io/compat-table/es6/)
 * [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+* CSS Custom Properties
