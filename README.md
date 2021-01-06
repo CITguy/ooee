@@ -5,9 +5,15 @@
 > 1. You'll love the Ooee GUI toolkit.
 
 
-A multi-platform, multi-library, forward-thinking, design system toolkit.
+A multi-platform, multi-technology, forward-thinking, design system toolkit.
 
-## Packages
-* [`@ooee/core`](packages/core/README.md)
-    * [`@ooee/core-color-fns`](packages/core-color-fns/README.md)
-* [`@ooee/web`](packages/web/README.md)
+
+
+## Hierarchy
+
+There may be cases where this hierarchy doesn't match exactly, but most assets should fit the following dependency pattern:
+
+* [Core](docs/CORE.md)
+    * [Platform](docs/PLATFORM.md)
+        * [Technology](docs/TECHNOLOGY.md)
+            * [Project](docs/PROJECT.md)
