@@ -78,6 +78,9 @@ coverage
 # Temporary Files
 *.swp
 
+### 11ty
+_site
+
 
 #####################
 ###   YARN (v1)   ###
