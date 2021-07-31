@@ -1,0 +1,136 @@
+# CORE Tokens
+#
+# These tokens should be platform-agnostic.
+#
+# Atomic vs Semantic tokens
+#
+# If Atomic tokens are "choices", then Semantic tokens are "decisions".
+#
+# - Atomic tokens are raw values that should rarely be used outside of a theme.
+# - Atomic tokens CAN change without notice.
+#
+# - Semantic tokens should rarely contain raw values and should reference an
+#   atomic token to resolve its value.
+# - Semantic tokens should rarely change, so that end-user consumption remains
+#   as consistent and stable as long as possible.
+
+
+# TODO: Should tokens be defined per-platform or mixed?
+#   - There are universal atomics, but there are also atomics that won't apply
+#     to every platform.  So we might try defining tokens at every level (core,
+#     platform, technology, and project)
+
+# Modular Scale (atomic)
+#
+# Unitless to simplify calculations and to remain platform-agnostic.
+# However, values may be treated as if they were CSS pixels (independent of
+# device screen pixel density).
+scale:
+  0x:
+    S: &scale-0x-S 2
+    M: &scale-0x-M 4
+    L: &scale-0x-L 8
+  1x:
+    S: &scale-1x-S 12
+    M: &scale-1x-M 16
+    L: &scale-1x-L 20
+  2x:
+    S: &scale-2x-S 24
+    M: &scale-2x-M 32
+    L: &scale-2x-L 40
+  4x:
+    S: &scale-4x-S 48
+    M: &scale-4x-M 64
+    L: &scale-4x-L 80
+  8x:
+    S: &scale-8x-S 96
+    M: &scale-8x-M 128
+    L: &scale-8x-L 160
+
+# Color Palette (atomic)
+#
+# Values are meant to be consumed via semantic color tokens within a Theme.
+#
+palette:
+  red:
+  orange:
+  yellow:
+  green:
+  cyan:
+  blue:
+  violet:
+  magenta:
+  pink:
+  gray:
+  # TBD...
+
+font:
+  weights:
+    thin: &font-weight-thin 100
+    extra-light: &font-weight-extra-light 200
+    light: &font-weight-light 300
+    regular: &font-weight-regular 400
+    medium: &font-weight-medium 500
+    semi-bold: &font-weight-semi-bold 600
+    bold: &font-weight-bold 700
+    extra-bold: &font-weight-extra-bold 800
+    heavy: &font-weight-heavy 900
+    extra-heavy: &font-weight-extra-heavy 950
+
+  # TODO: Should tokens be defined per-platform?
+  # TODO: Should these be defined as CSS font families?
+  # TODO: How are fonts defined in "native" platforms?
+  families:
+    system:
+      # "system" monospace font stack
+      mono: &font-family-system-mono
+        # Apple (Chrome, Firefox)
+        - SFMono-Regular
+        - SF Mono
+        # Microsoft
+        - Consolas
+        # Android
+        - Roboto Mono
+        # Linux (TBD...)
+        #- ...
+        # fallback
+        - monospace
+
+      # "system" sans-serif font stack
+      sans: &font-family-system-sans
+        - system-ui
+        - Segoe UI
+        - Roboto
+        - Oxygen
+        - Ubuntu
+        - Cantarell
+        - Fira Sans
+        - Droid Sans
+        - Helvetica Neue
+        - Helvetica
+        - Arial
+        - sans-serif
+
+# Defines _semantic_ tokens for consumption by end users.
+#
+# Each theme should provide the same set of semantic tokens so that themes may
+# be swapped out with no change in dependent code.
+theme:
+  light:
+    palette: # atomic
+      # red, orange, yellow, etc.
+    color: # reference "palette" values
+      ui:
+        bg: "#fafafa"
+
+    font:
+    spacing: # reference "scale" values
+
+  dark:
+    palette: # atomic
+
+    color:
+      bg: "#030303"
+    font:
+    spacing:
+
