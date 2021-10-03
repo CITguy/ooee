@@ -1,0 +1,41 @@
+---
+title: Ooee
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <title>{{ title }}</title>
+  <!-- TODO: decide on final PrismJS theme -->
+  <link href="https://unpkg.com/prismjs@1.20.0/plugins/line-numbers/prism-line-numbers.css" rel="stylesheet">
+  <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+</head>
+<body class="line-numbers">
+  <a class="skiplink" href="#content">Skip to Content</a>
+  <a id="top"></a>
+
+  <nav>
+    {% set navPages = collections.all | eleventyNavigation %}
+    <pre>{{ navPages | dump(2) }}</pre>
+
+    <!-- navPages | eleventyNavigationToHtml | safe -->
+
+    <pre>{{ eleventyNavigation | dump(2) }}</pre>
+  </nav>
+
+  <main id="content">
+    <header>
+      <h1>{{ title }}</h1>
+    </header>
+
+    <p>
+      Permalink: <code>{{ permalink }}</code>
+    </p>
+    <details open>
+      <summary>data.page</summary>
+      <pre>{{ page | dump(2) }}</pre>
+    </details>
+
+    {{ content | safe }}
+  </main>
+</body>
+</html>

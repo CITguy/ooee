@@ -98,5 +98,7 @@ _site
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
-!.yarn/cache # zero-install
-#.pnp.* # non-zero-install
+# zero-install
+!.yarn/cache 
+# non-zero-install
+#.pnp.* 
