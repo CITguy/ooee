@@ -1,0 +1,34 @@
+// @use '@ooee/scss/utils/a11y';
+// .foo {
+//   @include a11y.visuallyHidden;
+// }
+@mixin visuallyHidden {
+  // remove visible styles around element perimeter
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+
+  // shrink as small as possible without removing
+  // content from the a11y tree
+  width: 1px !important;
+  height: 1px !important;
+  clip: rect(1px, 1px, 1px, 1px); /* old & current Browsers */
+  clip-path: inset(50%); /* browsers in the future */
+
+  // Prevent the screen reader to skip spaces between words
+  white-space: nowrap;
+
+  // eliminate any space being taken up by the element
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+
+  // remove element from normal document flow
+  position: absolute !important;
+  z-index: -99999 !important;
+
+  // render fg and bg invisible
+  color: transparent;
+  background-color: transparent;
+  text-shadow: none;
+}

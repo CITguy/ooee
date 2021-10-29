@@ -1,0 +1,5 @@
+@use '../utils/a11y' as A11y
+
+.ui--visuallyHidden {
+  @include A11y.visuallyHidden;
+}
