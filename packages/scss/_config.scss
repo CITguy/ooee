@@ -1,0 +1,6 @@
+// Module Usage:
+//
+// @use '@ooee/scss/config' with ($env: DEV);
+// @use '@ooee/scss';
+
+$env: PROD !default;

@@ -1,0 +1,19 @@
+// @use '@ooee/scss/utils/prefers' as Prefers;
+// @include Prefers.reducedMotion {
+//   // apply reduced animations/transitions/motion here...
+// }
+@mixin reducedMotion {
+  @media (prefers-reduced-motion) {
+    @content;
+  }
+}
+
+// @use '@ooee/scss/utils/prefers' as Prefers;
+// @include Prefers.darkMode {
+//   // apply "dark" styles here...
+// }
+@mixin darkMode {
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
+}
